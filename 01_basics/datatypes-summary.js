@@ -4,7 +4,7 @@
 const id = Symbol("123")
 const anotherId = Symbol("123")
 
-console.log(id == anotherId);
+// console.log(id == anotherId);
 
 
 // Reference (Non Primitive)
@@ -20,3 +20,25 @@ const myFunction = function() {
     console.log("hello world");
 }
 
+// ************************************
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let firstname = "ankit"
+let lastname = firstname
+lastname = "sethi"
+
+// console.log(firstname);
+// console.log(lastname);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "user2@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
